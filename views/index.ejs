@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <div class="position-relative">
+    <div class="position-relative container-fluid m-6">
       <div class="w-25 mx-auto d-inline-flex">
         <table class="table">
           <thead>
@@ -91,7 +91,7 @@
         drawCv() {
           document.getElementById(
             "main"
-          ).innerHTML = `<iframe src="Files/CV - HTML" class="h-100 w-100"></iframe>`;
+          ).innerHTML = `<iframe src="Files/CV - HTML" class="w-100 h-100 d-inline-block"></iframe>`;
         }
       }
       const cv = new Cv();
@@ -105,7 +105,7 @@
                   <h3>
                     <a href="Projects/<%= folder %>"><%= folder%> </a>
                   </h3>
-                  <object class="w-100" height=80px  data="Projects/<%= folder %>/readme.txt"></object>
+                  <object class="w-100" style="height: 10vh"  data="Projects/<%= folder %>/readme.txt"></object>
                 </div>
               <% }) %>
             </div>
@@ -114,5 +114,11 @@
       }
       const projects = new Projects();
     </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
