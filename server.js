@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const port = 3030;
+const port = 8080;
 
 // Ustawienie silnika szablonów EJS
 app.set("view engine", "ejs");
