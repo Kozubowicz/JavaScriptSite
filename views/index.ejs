@@ -55,7 +55,7 @@
             <% folders.forEach(folder => { %>
             <tr>
               <td>
-                <a href="projects/<%= folder %>"><li><%= folder%></li> </a>
+                <a href="Projects/<%= folder %>"><li><%= folder%></li> </a>
               </td>
             </tr>
             <% }) %>
@@ -91,7 +91,7 @@
         drawCv() {
           document.getElementById(
             "main"
-          ).innerHTML = `<iframe src="files/CV - HTML" class="h-100 w-100"></iframe>`;
+          ).innerHTML = `<iframe src="Files/CV - HTML" class="h-100 w-100"></iframe>`;
         }
       }
       const cv = new Cv();
@@ -103,9 +103,9 @@
               <% folders.forEach(folder => { %>
                 <div  class="border projEl"" >
                   <h3>
-                    <a href="projects/<%= folder %>"><%= folder%> </a>
+                    <a href="Projects/<%= folder %>"><%= folder%> </a>
                   </h3>
-                  <object class="w-100" height=80px  data="projects/<%= folder %>/readme.txt"></object>
+                  <object class="w-100" height=80px  data="Projects/<%= folder %>/readme.txt"></object>
                 </div>
               <% }) %>
             </div>
