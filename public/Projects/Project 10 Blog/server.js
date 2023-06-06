@@ -11,12 +11,12 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  const folderPath = path.join(__dirname, `public/posts`);
+  const folderPath = path.join(__dirname, `public/Posts`);
   const folders = getFoldersInfo(folderPath);
   res.render("index", { folders });
 });
 app.get("*", (req, res) => {
-  res.status(404).sendFile(__dirname + "/public/files/404.html");
+  res.status(404).sendFile(__dirname + "/public/Files/404.html");
 });
 function getFoldersInfo(location) {
   const folders = [];

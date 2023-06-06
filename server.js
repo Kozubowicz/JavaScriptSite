@@ -40,7 +40,7 @@ app.get("/projects/Project%2010%20Blog/", (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  res.status(404).sendFile(__dirname + "/public/files/404.html");
+  res.status(404).sendFile(__dirname + "/public/Files/404.html");
 });
 
 // Start serwera
