@@ -1,0 +1,1 @@
+Simple website application count numbers of marks, words and sentences.

@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  padding: 2em;
+  color: rgb(60, 255, 0);
+  font-size: 2rem;
+  display: flex;
+}
+
+textarea {
+  width: 400px;
+  height: 450px;
+  margin-right: 50px;
+  font-size: 1.4rem;
+}

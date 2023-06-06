@@ -1,0 +1,10 @@
+.fc-daygrid-day-number,
+.fc-col-header-cell-cushion {
+  color: white;
+  text-decoration: none;
+}
+.artis {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}

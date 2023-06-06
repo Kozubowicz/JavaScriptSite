@@ -1,0 +1,1 @@
+Web aplication downloadning from NBP api exchange rates and presenting them im table. After clicking the row apearing modal window with chart of curreny defaulty 3 latest months with posiblity to change rages od dates.

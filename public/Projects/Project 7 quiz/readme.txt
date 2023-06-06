@@ -1,0 +1,1 @@
+Quiz aplication downloading set of questions from questions.txt file 4 posibles answer and indicator to right answer. On the end of working it present pop-up modal window with score, after close restarting aplication.

@@ -1,0 +1,50 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 2rem;
+  color: #00ff00;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+td {
+  padding-bottom: 5px;
+  padding-inline-end: 20px; /* dostosuj wartość do swoich preferencji */
+}
+
+.date {
+  width: 120px;
+  height: 25px;
+  color: #00ff00;
+  background-color: rgb(34, 34, 34);
+}
+
+#moja-lista {
+  width: 150px;
+  height: 35px;
+  color: #00ff00;
+  background-color: rgb(34, 34, 34);
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 2px solid silver;
+}
+
+button {
+  width: 100px;
+  height: 35px;
+  background-color: #2b2929;
+  border: 3px solid silver;
+  color: #00ff00;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+}

@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(66, 66, 66);
+}
+.container {
+  text-align: center;
+}
+
+form {
+  margin: 25px auto;
+  width: 500px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input,
+.searchButton {
+  font-size: 1rem;
+  padding: 0.8rem;
+}
+
+.searchButton {
+  border: 2px solid silver;
+  background: grey;
+  color: white;
+}
+
+.auto-complite-list {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  list-style: none;
+  text-align: left;
+  background-color: white;
+  width: 100%;
+}
+.list-item {
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: lightgray;
+}

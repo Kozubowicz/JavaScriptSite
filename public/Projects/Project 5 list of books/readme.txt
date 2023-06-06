@@ -1,0 +1,1 @@
+A web application for building and managing list of books with author name. The data are put in browser storage so they don't wanish after refreshing page.

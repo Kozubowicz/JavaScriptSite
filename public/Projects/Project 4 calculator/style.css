@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  display: flex;
+}
+.calculator {
+  margin: auto;
+  background-color: rgb(66, 66, 66);
+  padding: 10px;
+  border: 2px solid silver;
+}
+input {
+  display: block;
+  width: 17rem;
+  margin: 0.3rem;
+  border-radius: 1px solid silver;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.numers button,
+.operators button {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.1rem;
+  border: 2px solid silver;
+  outline-width: 0;
+}
+
+button:hover {
+  border-color: blue;
+}
+
+button:active {
+  font-weight: bold;
+  background-color: gray;
+}
+
+.left-panel,
+.right-panel {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.3rem;
+}
+
+button.big-button {
+  height: 6.1rem;
+}
+
+button.big-button-res {
+  height: 6.1rem;
+  background-color: aqua;
+}
+
+button.clear {
+  background-color: rgb(173, 235, 28);
+}

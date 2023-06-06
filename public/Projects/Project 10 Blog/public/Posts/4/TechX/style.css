@@ -1,0 +1,26 @@
+.fc-daygrid-day-number,
+.fc-col-header-cell-cushion {
+  color: white;
+  text-decoration: none;
+}
+.artis {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}
+
+#minature {
+  width: 100px; /* Określona szerokość */
+  height: 100px; /* Określona wysokość */
+  overflow: hidden; /* Przycięcie zawartości */
+}
+
+#minature img {
+  width: 100%; /* Zapewnienie, że obrazek wypełnia szerokość */
+  height: 100%; /* Zapewnienie, że obrazek wypełnia wysokość */
+  object-fit: cover; /* Przycięcie i dopasowanie proporcji */
+  object-position: center; /* Pozycjonowanie obrazka na środku */
+}
+.mainArt:hover {
+  background-color: rgb(100, 99, 99);
+}

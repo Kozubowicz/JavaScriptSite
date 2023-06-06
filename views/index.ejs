@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>List of projects</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #636262;
+        padding: 20px;
+      }
+
+      .table {
+        color: #fcf7f7;
+        background-color: #022175;
+        margin-right: 20px;
+      }
+      a {
+        color: #fdfdfd;
+      }
+
+      .table th,
+      .table td {
+        border-color: #535353;
+      }
+      th:hover {
+        background-color: rgb(70, 70, 70);
+      }
+      .projEl {
+        background-color: rgb(20, 20, 20);
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="position-relative">
+      <div class="w-25 mx-auto d-inline-flex">
+        <table class="table">
+          <thead>
+            <tr>
+              <th id="cv">CV</th>
+            </tr>
+            <thead>
+              <tr>
+                <th id="proj">Projekty</th>
+              </tr>
+            </thead>
+          </thead>
+
+          <tbody>
+            <% folders.forEach(folder => { %>
+            <tr>
+              <td>
+                <a href="projects/<%= folder %>"><li><%= folder%></li> </a>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+      <div
+        id="main"
+        class="w-75 mx-auto position-absolute d-inline-block"
+        style="height: 95vh"
+      ></div>
+    </div>
+    <script>
+      window.onload = function () {
+        ui.init();
+      };
+
+      class Ui {
+        init() {
+          document
+            .getElementById("cv")
+            .addEventListener("click", (e) => cv.drawCv());
+
+          document
+            .getElementById("proj")
+            .addEventListener("click", (e) => projects.drawProjects());
+          cv.drawCv();
+        }
+      }
+      const ui = new Ui();
+
+      class Cv {
+        drawCv() {
+          document.getElementById(
+            "main"
+          ).innerHTML = `<iframe src="../files/CV - HTML" class="h-100 w-100"></iframe>`;
+        }
+      }
+      const cv = new Cv();
+
+      class Projects {
+        drawProjects() {
+          document.getElementById("main").innerHTML = `
+            <div style="height: 95vh; overflow: auto">
+              <% folders.forEach(folder => { %>
+                <div  class="border projEl"" >
+                  <h3>
+                    <a href="projects/<%= folder %>"><%= folder%> </a>
+                  </h3>
+                  <object class="w-100" height=80px  data="projects/<%= folder %>/readme.txt"></object>
+                </div>
+              <% }) %>
+            </div>
+          `;
+        }
+      }
+      const projects = new Projects();
+    </script>
+  </body>
+</html>

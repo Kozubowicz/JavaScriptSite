@@ -1,0 +1,1 @@
+Express JS server application of blog main page automatically updating list of post and attaching links to them.

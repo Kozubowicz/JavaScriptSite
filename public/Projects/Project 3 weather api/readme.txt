@@ -1,0 +1,1 @@
+Simple api use application downloading weather data from openweathermap.org and geolocation of user from navigation component of web browser. And later presenting them on website.

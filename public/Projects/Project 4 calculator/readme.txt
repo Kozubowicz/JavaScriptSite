@@ -1,0 +1,1 @@
+Simple calculator application using math js library to make calculations from text input area and presenting score on it. Possible to attach on website.

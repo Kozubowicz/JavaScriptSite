@@ -1,0 +1,134 @@
+body {
+    font-family: "Montserrat", sans-serif;
+
+    margin: auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+
+    background: #ffffff;
+}
+
+aside {
+    width: 250px;
+    background: #1e2939;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.SectionTitle {
+    width: 485px;
+    margin-bottom: 51px;
+}
+.date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #a8a8a8;
+}
+
+.photo {
+    margin-top: 25px;
+}
+
+.h-secondary {
+    color: #ffffff;
+}
+.contact-links {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.bold {
+    font-weight: 700;
+}
+.list-secondary {
+    color: #fb6d3a;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-position: inside;
+}
+.list-secondary-item {
+    color: #ffffff;
+}
+
+.contact-block {
+    margin-top: 51px;
+    margin-left: 10px;
+}
+.tech-skills-block {
+    margin-top: 47px;
+    margin-left: 10px;
+}
+
+main {
+    padding: 10px 60px 40px 35px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+}
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin-bottom: 40px;
+}
+
+.list-primary {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    padding-left: 0;
+    list-style-position: inside;
+}
+.list-primary-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: none;
+    color: #595959;
+}
+
+.header-primary {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.highlight {
+    color: #fb6d3a;
+}
+.language {
+    color: #a8a8a8;
+}
+
+.list {
+    width: 525px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    padding-left: 0;
+    list-style-position: inside;
+}

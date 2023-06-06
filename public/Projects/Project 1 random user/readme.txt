@@ -1,0 +1,1 @@
+Simple api use application downloading data from randomuser.me about user and presenting them on html page. 

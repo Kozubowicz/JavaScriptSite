@@ -1,0 +1,47 @@
+body {
+  background-image: url("../picture.jpg");
+  background-repeat: repeat;
+  background-position: right;
+  padding: 50px;
+}
+
+h2 {
+  color: cadetblue;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding-top: 50px;
+}
+
+.user-profile {
+  margin: auto;
+  padding: 0.5em;
+  width: 25em;
+  background-color: rgb(22, 17, 17);
+  border-radius: 0.4em;
+  color: cadetblue;
+}
+
+#avatar-img {
+  margin: 0.3em;
+  border-radius: 5em;
+}
+#full-name {
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+#username {
+  font-size: 0.8em;
+}
+
+#user-details {
+  margin-top: 2em;
+  font-size: 0.8;
+  color: teal;
+}
