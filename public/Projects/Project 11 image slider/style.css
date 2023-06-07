@@ -1,6 +1,12 @@
+body {
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie wzdłuż osi X */
+  padding: 10px;
+}
 #container {
   width: 600px;
   height: 300px;
+  position: absolute;
 }
 #comparision {
   width: 100%;
