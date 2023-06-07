@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
-
     background: #ffffff;
 }
 
@@ -23,7 +22,7 @@ aside {
 }
 
 .SectionTitle {
-    width: 485px;
+    
     margin-bottom: 51px;
 }
 .date {
@@ -71,7 +70,7 @@ aside {
 
 main {
     padding: 10px 60px 40px 35px;
-    width: 100%;
+    
 }
 
 h1 {
@@ -124,7 +123,7 @@ h1 {
 }
 
 .list {
-    width: 525px;
+   
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
