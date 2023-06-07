@@ -1,6 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
-
+    background: transparent;
     margin: auto;
 }
 .wrapper {
@@ -22,7 +22,6 @@ aside {
 }
 
 .SectionTitle {
-    
     margin-bottom: 51px;
 }
 .date {
@@ -70,7 +69,6 @@ aside {
 
 main {
     padding: 10px 60px 40px 35px;
-    
 }
 
 h1 {
@@ -123,7 +121,6 @@ h1 {
 }
 
 .list {
-   
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
