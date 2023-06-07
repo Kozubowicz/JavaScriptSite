@@ -1,0 +1,1 @@
+Small application using slider to dynamically change between two pictures.
