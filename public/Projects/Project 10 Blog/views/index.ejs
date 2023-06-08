@@ -47,7 +47,7 @@
     <title>Tech-blog</title>
   </head>
   <body class="bg-secondary">
-    <div class="container-fluid mb-4 p-3 text-light">
+    <div class="p-3 text-light">
       <div id="main">
         <div class="border w-100 bg-dark d-flex mb-3" id="banner">
           <h1 class="p-2">Short tech-blog about nothing important</h1>
@@ -55,9 +55,9 @@
             <img src="public/Files/logo.png" height="100px"
           /></a>
         </div>
-        <div id="page" class="position-relative p-4">
+        <div id="page" class="row gap-4 p-3">
           <div
-            class="border w-75 mx-auto bg-dark position-absolute start-0 rounded"
+            class="col-md-8 mx-md-auto p-0 border rounded bg-dark"
             id="Articles"
           >
             <% folders.reverse().forEach(folder => { %>
@@ -67,7 +67,7 @@
                 src="../../<%= folder.path %>/miniature.jpeg"
                 id="minature"
               />
-              <div id="description" class="p-3">
+              <div id="description" class="p-2">
                 <h3 id="title">
                   <a style="color: white" href="/<%= folder.path %>">
                     <%= folder.name %>
@@ -80,9 +80,8 @@
           </div>
 
           <div
-            class="border bg-dark position-absolute end-0 rounded d-inline-block"
+            class="col-md-3 p-0 mx-md-auto border end-0 rounded bg-dark"
             id="calendar"
-            style="width: 20%"
           ></div>
         </div>
       </div>
