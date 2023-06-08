@@ -27,6 +27,12 @@ h2 {
   color: cadetblue;
 }
 
+@media (max-width: 768px) {
+  .user-profile {
+    width: 100%;
+  }
+}
+
 #avatar-img {
   margin: 0.3em;
   border-radius: 5em;
