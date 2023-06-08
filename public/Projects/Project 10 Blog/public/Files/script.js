@@ -2,12 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("calendar");
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
-      start: "prev,next,title", // will normally be on the left. if RTL, will be on the right
+      start: "title", // will normally be on the left. if RTL, will be on the right
       center: "", // will normally be on the right. if RTL, will be on the left
-      end: "",
+      end: "prev,next",
     },
     titleFormat: { year: "numeric", month: "numeric" },
     aspectRatio: 1,
+    contentHeight: 450,
     showNonCurrentDates: true,
   });
   calendar.render();

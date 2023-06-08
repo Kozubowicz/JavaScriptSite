@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <meta charset="UTF-8" />  
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <script
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
@@ -19,14 +21,13 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    
-    
+
     <title>Exchange rates</title>
   </head>
 
   <body class="bg-secondary">
     <div class="container-fluid m-6">
-      <br>
+      <br />
       <div id="document" class="fs-4 mb-4 text-light text-center"></div>
       <table
         id="currentTable"
@@ -47,36 +48,38 @@
     <div class="modal fade" id="modalWindow" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          
           <div class="modal-body">
             <p id="modalResults"></p>
-            <div class="container-fluid m-2">      
-              <table class="table mx auto text-dark">
-                <tr>
-                  <td>Data początkowa:</td>
-                  <td>Data końcowa:</td>
-                  <td></td>
-                  
-                </tr>
-                <tr></tr>
-                  <td><input class="date container" type="date" id="start-date" /></td>
-                  <td><input class="date container" type="date" id="end-date" /></td>
-                  
-                  <td>
-                    <button
-                      id="codeCheckButton"
-                      class="btn btn-info container"                      
-                    >
-                      Update
-                    </button>
-                  </td>
-                </tr>
-              </table><div id="chart_div" style="width: 100%; height: 400px"></div>
-          </div>
+            <div class="container-fluid m-2">
+              <hr />
+              <div class="row gap-2 p-2">
+                <div class="col-sm-4">
+                  Data początkowa:
+                  <input class="date container" type="date" id="start-date" />
+                </div>
+
+                <div class="col-sm-4">
+                  Data końcowa:
+
+                  <input class="date container" type="date" id="end-date" />
+                </div>
+                <div class="col-sm-3">
+                  <br /><button
+                    id="codeCheckButton"
+                    class="btn btn-info container"
+                  >
+                    Update
+                  </button>
+                </div>
+              </div>
+              <hr />
+
+              <div id="chart_div" style="width: 100%; height: 400px"></div>
+            </div>
           </div>
           <div class="modal-footer">
             <button
-              class="btn btn-secondary "
+              class="btn btn-secondary"
               type="button"
               data-dismiss="modal"
               id="closeModal"
