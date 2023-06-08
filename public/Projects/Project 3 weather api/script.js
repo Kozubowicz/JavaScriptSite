@@ -48,12 +48,15 @@ function updateWeather(data) {
   document.getElementById("wind-speed").innerHTML = data.wind.speed + " m/s";
 
   let date = new Date(data.sys.sunrise * 1000);
-  document.getElementById("sunrise").innerHTML =
-    date.getHours() + ":" + date.getMinutes();
-
+  document.getElementById("sunrise").innerHTML = date.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
   date = new Date(data.sys.sunset * 1000);
-  document.getElementById("sunset").innerHTML =
-    date.getHours() + ":" + date.getMinutes();
+  document.getElementById("sunset").innerHTML = date.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 
   document.getElementById("wDescription").innerHTML =
     data.weather[0].description;
