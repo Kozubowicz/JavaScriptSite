@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       end: "prev,next",
     },
     titleFormat: { year: "numeric", month: "numeric" },
-    aspectRatio: 1,
-    contentHeight: 450,
+
+    height: 500,
     showNonCurrentDates: true,
   });
   calendar.render();
