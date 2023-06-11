@@ -110,15 +110,14 @@
 
       class Projects {
         drawProjects() {
-          let sam = "drzewo";
           document.getElementById("main").innerHTML = `
               <div style="height: 95vh; overflow: auto">
                 <% folders.forEach(folder => { %>
                   <div  class="border projEl"" >
                     <h3>
-                      <a href="Projects/<%= folder %>"><%= folder%> ${sam} </a>
+                      <a href="Projects/<%= folder %>"><%= folder%> </a>
                     </h3>
-                    <object class="w-100" style="height: 100px"  data="Projects/<%= folder %>/readme.txt"></object>
+                    <object class="w-100" style="height: 100px, color: red;"  data="Projects/<%= folder %>/readme.txt"></object>
                  
                    </div>
                 <% }) %>
