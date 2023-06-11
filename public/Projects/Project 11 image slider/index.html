@@ -8,19 +8,21 @@
     <title>Image slider</title>
   </head>
   <body>
-    <div id="container">
-      <div id="comparision">
-        <div id="image">
-          <div id="divisor"></div>
+    <div id="wrapper">
+      <div id="container">
+        <div id="comparision">
+          <div id="image">
+            <div id="divisor"></div>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            id="slider-range"
+            oninput="divisorChanged()"
+          />
         </div>
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value="50"
-          id="slider-range"
-          oninput="divisorChanged()"
-        />
       </div>
     </div>
     <script src="script.js"></script>

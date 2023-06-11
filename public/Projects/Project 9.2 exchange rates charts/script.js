@@ -106,7 +106,7 @@ class Chart {
 
   updateChart(date) {
     console.log(date);
-    document.getElementById("currenyData").innerHTML = `Waluta: ${
+    document.getElementById("currencyData").innerHTML = `Waluta: ${
       date.currency
     } (${date.code.toUpperCase()})`;
 
