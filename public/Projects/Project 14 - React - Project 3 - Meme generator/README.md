@@ -1,0 +1,1 @@
+Simple react app, it's purpose is to use interactive elements to made combo of pictures and text and create mem
