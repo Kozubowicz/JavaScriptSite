@@ -1,0 +1,1 @@
+Simple react app, adding light and dark mode to static site.
