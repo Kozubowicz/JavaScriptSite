@@ -1,1 +1,1 @@
-Simple site made with React.Js Framework, which purpose is to make reusable component used in loop
+Simple site made with React.Js Framework, which purpose is to make reusable component called in a loop.

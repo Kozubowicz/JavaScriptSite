@@ -1,1 +1,1 @@
-First simple static site made with React.Js Framework
+First simple static site made with React.Js Framework.
