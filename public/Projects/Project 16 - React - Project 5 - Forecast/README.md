@@ -1,0 +1,1 @@
+Simple react app, to present forecast on 5 days.
