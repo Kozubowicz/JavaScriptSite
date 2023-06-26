@@ -1,1 +1,1 @@
-Web application drawing exchange rates chart  defoulty from 3last  months with posiblity to change date rates. Application downloading from NBP api exchange rates of chosen from list currency which is filled with currency code on beginning of working application.
+Web application drawing exchange rates chart from 3 last months with posiblity to change date rates. Application downloads from NBP api exchange rates of chosen from currency list which is filled with currency code in the beginning of working application.

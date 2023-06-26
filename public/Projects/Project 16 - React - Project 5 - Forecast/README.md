@@ -1,1 +1,1 @@
-Simple react app, to present forecast on 5 days.
+Simple react app, to present forecast for 5 days.
