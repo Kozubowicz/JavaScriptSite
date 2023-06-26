@@ -47,38 +47,40 @@
         border: none;
       }
       #main {
-        box-shadow: 0px 0px 40px rgba(8, 155, 145, 0.8);
+        box-shadow: 0px 0px 100px rgba(2, 107, 100, 0.8);
       }
       #table {
-        box-shadow: 0px 0px 40px rgba(8, 155, 145, 0.8);
+        box-shadow: 0px 0px 100px rgba(2, 107, 100, 0.8);
       }
     </style>
   </head>
 
   <body class="container-fluid">
     <div class="row gap-4 p-3">
-      <div id="table" class="col-md-3 mx-md-auto p-0" style="max-height: 95vh; overflow: auto">
-        <table class="table mb-0">
-          <thead>
-            <tr>
-              <th id="cv">CV</th>
-            </tr>
-            <tr>
-              <th id="proj">Projekty</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% folders.forEach(folder => { %>
-            <tr>
-              <td>
-                <a href="Projects/<%= folder %>"><li><%= folder%></li> </a>
-              </td>
-            </tr>
-            <% }) %>
-          </tbody>
-        </table>
+      <div id="table" class="col-md-3 mx-md-auto p-0 mt-4" style="margin: auto">
+        <div style="max-height: 90vh; overflow: auto">
+          <table class="table mb-0">
+            <thead>
+              <tr>
+                <th id="cv">CV</th>
+              </tr>
+              <tr>
+                <th id="proj">Projekty</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% folders.forEach(folder => { %>
+              <tr>
+                <td>
+                  <a href="Projects/<%= folder %>"><li><%= folder%></li> </a>
+                </td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div id="main" class="col-md-8 mx-md-auto p-0 mb-0"></div>
+      <div id="main" class="col-md-8 mx-md-auto p-0 mt-4"></div>
     </div>
     <script>
       window.onload = function () {
@@ -100,7 +102,7 @@
           document.getElementById(
             "main"
           ).innerHTML = `<iframe  src="Files/CV - HTML" class="w-100 d-inline-block"
-            style="height:95vh" ></iframe>`;
+            style=" height:90vh" ></iframe>`;
         }
       }
       const cv = new Cv();
@@ -108,7 +110,7 @@
       class Projects {
         drawProjects() {
           document.getElementById("main").innerHTML = `
-              <div style="height: 95vh; overflow: auto">
+              <div style="height: 90vh; overflow: auto">
                 <% folders.forEach(folder => { %>
                   <div  class="border projEl"" >
                     <h3>
