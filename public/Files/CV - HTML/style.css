@@ -1,6 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     background: transparent;
+    text-align: justify;
     margin: auto;
 }
 .wrapper {
