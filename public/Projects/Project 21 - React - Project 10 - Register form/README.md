@@ -1,0 +1,3 @@
+The registration form application written in React is a simple tool that allows users to enter registration data. During the development stage, there is a feature where the entered data is displayed below the form for verification purposes, after successful validation. However, please note that this display function is intended for development purposes only and will not be included in the final version of the application.
+
+The user interface consists of several input form fields, which are checked after clicking the "Sign In" button. If all the data is valid, the form will be cleared, and an "OK" message will appear next to the button.
