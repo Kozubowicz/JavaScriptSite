@@ -36,14 +36,22 @@ app.get("/projects/Project%2010%20Blog/", (req, res) => {
   res.render("../public/Projects/Project 10 Blog/views/index", { folders });
 });
 
-app.get("/projects/Project%25%-%React%TypeScript%-%Project%1%-%Online%shop/", (req, res) => {
-  res.sendFile(
-    path.join(
-      __dirname,
-      "public/Projects/Project 25 - React TypeScript - Project 1 - Online shop",
-      "index.html"
-    )
+app.use((req, res, next) => {
+  // Wyznaczanie ścieżki bazowej na podstawie położenia pliku index.html
+  const indexPath = path.join(
+    __dirname,
+    "public/Projects/Project 25 - React TypeScript - Project 1 - Online shop",
+    "index.html"
   );
+  const basePath = path.dirname(indexPath);
+  req.basePath = basePath;
+  next();
+});
+
+// Endpoint dla konkretnej ścieżki
+app.get("/projects/Project%25%-%React%TypeScript%-%Project%1%-%Online%shop/", (req, res) => {
+  const indexPath = path.join(req.basePath, "index.html");
+  res.sendFile(indexPath);
 });
 
 app.get("*", (req, res) => {
