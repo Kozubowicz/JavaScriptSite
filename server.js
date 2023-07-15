@@ -31,12 +31,19 @@ app.get("/", (req, res) => {
   });
 });
 app.get("/projects/Project%2010%20Blog/", (req, res) => {
-  const folderPath = path.join(
-    __dirname,
-    `public/Projects/Project 10 Blog/public/Posts`
-  );
+  const folderPath = path.join(__dirname, `public/Projects/Project 10 Blog/public/Posts`);
   const folders = getFoldersInfo(folderPath);
   res.render("../public/Projects/Project 10 Blog/views/index", { folders });
+});
+
+app.get("/projects/Project%25%-%React%TypeScript%-%Project%1%-%Online%shop/", (req, res) => {
+  res.sendFile(
+    path.join(
+      __dirname,
+      "public/Projects/Project 25 - React TypeScript - Project 1 - Online shop",
+      "index.html"
+    )
+  );
 });
 
 app.get("*", (req, res) => {
@@ -79,10 +86,7 @@ function getFoldersInfo(location) {
       const subFolders = getFoldersInfo(filePath);
       folders.push(...subFolders);
     } else if (fileStat.isFile() && path.extname(file) === ".html") {
-      const relativePath = path.relative(
-        path.join(__dirname, "public"),
-        filePath
-      );
+      const relativePath = path.relative(path.join(__dirname, "public"), filePath);
       const folderPath = path.dirname(relativePath);
       const folderName = path.basename(folderPath);
       const folder = {
