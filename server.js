@@ -5,28 +5,25 @@ const path = require("path");
 const app = express();
 const port = 8080;
 
-// Ustawienie silnika szablonów EJS
 app.set("view engine", "ejs");
 
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  // Odczytaj nazwy folderów w katalogu public
+  // Read the folder names in the public directory
   fs.readdir(path.join(__dirname, "public/Projects"), (err, files) => {
     if (err) {
       console.error(err);
       return res.status(500).send("Wystąpił błąd");
     }
 
-    // Filtruj tylko foldery
     let folders = files.filter((file) =>
       fs.statSync(path.join(__dirname, "public/Projects", file)).isDirectory()
     );
-    //sortowanie folderów
-    folders = customSort(folders);
 
-    // Renderuj widok EJS z danymi folderów
+    //Folder sorting
+    folders = customSort(folders);
     res.render("index", { folders });
   });
 });
@@ -50,25 +47,24 @@ app.get("*", (req, res) => {
   res.status(404).sendFile(path.join(__dirname, "public/Files/404.html"));
 });
 
-// Start serwera
+// Server start-up
 app.listen(port, () => {
   console.log(`Serwer nasłuchuje na porcie ${port}`);
 });
 
 function customSort(arr) {
-  const regex = /^Project (\d+)/; // Wyrażenie regularne dopasowujące liczbę po "Project "
+  const regex = /^Project (\d+)/; //Regular expression to match the number after "Project "
 
   arr.sort(function (a, b) {
     const numA = parseInt(a.match(regex)[1]);
     const numB = parseInt(b.match(regex)[1]);
 
     if (numA === numB) {
-      // Jeśli liczby są równe, sortujemy według kolejności leksykograficznej tytułów
       const titleA = a.replace(regex, "").trim();
       const titleB = b.replace(regex, "").trim();
-      return titleA.localeCompare(titleB);
+      return titleB.localeCompare(titleA);
     } else {
-      return numA - numB;
+      return numB - numA;
     }
   });
 
