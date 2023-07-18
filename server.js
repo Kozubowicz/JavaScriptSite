@@ -33,16 +33,6 @@ app.get("/projects/Project%2010%20Blog/", (req, res) => {
   res.render("../public/Projects/Project 10 Blog/views/index", { folders });
 });
 
-app.get("/projects/Project%25%-%React%TypeScript%-%Project%1%-%Online%shop/", (req, res) => {
-  res.sendFile(
-    path.join(
-      __dirname,
-      "public/Projects/Project%25%-%React%TypeScript%-%Project%1%-%Online%shop",
-      "index.html"
-    )
-  );
-});
-
 app.get("*", (req, res) => {
   res.status(404).sendFile(path.join(__dirname, "public/Files/404.html"));
 });
